@@ -1,0 +1,227 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+}
+
+body {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+input[type="number"],
+input[type="text"],
+select:focus,
+textarea {
+    font-size: 16px;
+}
+
+#login-card, #lobby-list-card, #create-lobby-card, #password-card {
+    max-width: 400px;
+    margin: 0 auto auto;
+}
+
+#lobby-list-collection {
+    max-height: 275px;
+    overflow-y: auto;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #666;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-track {
+    background: #ddd;
+    border-radius: 20px;
+}
+
+.lobby-list-item {
+    text-align: left;
+}
+
+.lobby-list-item:hover {
+    cursor: pointer;
+}
+
+.input-field {
+    text-align: left;
+}
+
+#play-card {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#play-card > .card {
+    margin-top: 0;
+}
+
+#chat-holder {
+    margin-left: 10px;
+    width: 220px;
+}
+
+#chat-holder > .card-content {
+    padding: 10px;
+}
+
+#chat-list {
+    min-height: 350px;
+    height: calc(100vh - 160px);
+    overflow-y: auto;
+    min-width: 36px;
+}
+
+.chat-item {
+    text-align: left;
+    cursor: default;
+    padding: 5px !important;
+}
+
+.player-item {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    min-width: 36px;
+}
+
+.chat-item:hover,
+.player-item:hover {
+    background: #fff !important;
+}
+
+.chat-text {
+    word-wrap: break-word;
+    color: black;
+}
+
+#player-list-holder {
+    margin-right: 10px;
+    width: 220px;
+}
+
+#player-list-holder > .card-content {
+    padding: 10px;
+}
+
+#player-list-collection {
+    text-align: left;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    max-height: 372px;
+}
+
+#canvas-header {
+    width: 640px;
+    height: 30px;
+    margin-bottom: -30px;
+    display: flex;
+    z-index: 999999999;
+    position: relative;
+    text-shadow: 0 0 7px white;
+    pointer-events: none;
+}
+
+.canvas-header-item {
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 30px;
+    flex-basis: 0;
+}
+
+#canvas-left-label, #canvas-right-label {
+    flex-grow: 1;
+}
+
+#canvas-right-label {
+    text-align: right;
+}
+
+#canvas-middle-label {
+    text-align: center;
+    font-size: 2em;
+    line-height: 50px;
+    flex-grow: 2;
+}
+
+#artist-options {
+    padding: 7px;
+    margin-top: 10px;
+}
+
+.minicolors-panel {
+    margin-bottom: -7px;
+    border: none;
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+#canvas {
+    margin-bottom: -7px;
+}
+
+.queue-number {
+    float: left;
+    padding: 0;
+    width: 18px;
+    height: 20px;
+    margin: 0 2px 0 -7px;
+    text-align: center;
+}
+
+.player-score {
+    padding: 0;
+    width: 20px;
+    margin: 0;
+    float: right;
+    color: #757575;
+    text-align: right;
+}
+
+#artist-options {
+    display: flex;
+}
+
+#artist-buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+#artist-buttons > a {
+    margin-left: 7px;
+    margin-bottom: 7px;
+}
+
+#canvas {
+    z-index: 0;
+}
+
+#chat-input {
+    margin-bottom: 10px;
+}
+
+.lock, .hourglass {
+    float: right;
+    font-size: 1em;
+    margin-top: 3px;
+}
+
+span.badge {
+    margin-left: 0;
+}
