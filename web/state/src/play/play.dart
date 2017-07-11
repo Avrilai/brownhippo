@@ -28,6 +28,7 @@ class Play extends State {
     playCard.style.display = 'none';
 
     client.send(MessageType.exitLobby);
+    
   }
 
 }
