@@ -66,6 +66,12 @@ class SocketReceiver {
 
     // logout if currrently logged in
     if (_loginManager.containsSocket(_socket)) {
+
+      // remove socket from lobby if in lobby
+      if (_loginManager.socketIsCurrentlyInLobby(_socket)) {
+        _loginManager.exitLobbyFromSocket(_socket);
+      }
+
       _loginManager.logoutSocket(_socket);
     }
 
