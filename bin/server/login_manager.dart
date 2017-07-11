@@ -74,8 +74,6 @@ class LoginManager {
 
   // logs out socket
   logoutSocket(ServerWebSocket socket) {
-    exitLobbyFromSocket(socket);
-
     final username = _socketForUsername.remove(socket);
     print('$username logged out');
   }
